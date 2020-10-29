@@ -12,10 +12,10 @@ function showTab(n) {
         document.getElementById("prevBtn").style.display = "inline";
     }
     if (n == (x.length - 1)) {
-        document.getElementById("nextBtn").style.display= "none";
+        document.getElementById("nextBtn").style.display = "none";
     } else {
         document.getElementById("nextBtn").innerHTML = "Далее";
-        document.getElementById("nextBtn").style.display= "inline";
+        document.getElementById("nextBtn").style.display = "inline";
     }
     // ... and run a function that displays the correct step indicator:
     fixStepIndicator(n)
@@ -33,18 +33,19 @@ function nextPrev(n) {
     // if you have reached the end of the form... :
     if (currentTab >= x.length) {
         //...the form gets submitted:
-        document.getElementById("main-form").submit();
+        document.getElementById("insert").submit();
         return false;
+
     }
     // Otherwise, display the correct tab:
     showTab(currentTab);
 }
 
-$("#main-form").keydown(function(event){
-    if(event.keyCode == 13) {
-      event.preventDefault();
-      return false;
-  }
+$("#main-form").keydown(function (event) {
+    if (event.keyCode == 13) {
+        event.preventDefault();
+        return false;
+    }
 });
 
 function validateForm() {
@@ -81,69 +82,69 @@ function fixStepIndicator(n) {
 
 //value x9 - x13 
 
-var  x3 = document.querySelector('.res-x3'),
-x9 = document.querySelector('.res-x9'),
-x10 = document.querySelector('.res-x10'),
-x11 = document.querySelector('.res-x11'),
-x12 = document.querySelector('.res-x12'),
-x13 = document.querySelector('.res-x13');
+var x3 = document.querySelector('.res-x3'),
+    x9 = document.querySelector('.res-x9'),
+    x10 = document.querySelector('.res-x10'),
+    x11 = document.querySelector('.res-x11'),
+    x12 = document.querySelector('.res-x12'),
+    x13 = document.querySelector('.res-x13');
 
 x3.addEventListener('keyup', function () {
-switch (x3.value) {
-case "9":
-    x9.value = 41;
-    x10.value = 46;
-    x11.value = 10;
-    x12.value = 2;
-    x13.value = 1;
-    break;
+    switch (x3.value) {
+        case "9":
+            x9.value = 41;
+            x10.value = 46;
+            x11.value = 10;
+            x12.value = 2;
+            x13.value = 1;
+            break;
 
-case "10":
-    x9.value = 30;
-    x10.value = 52;
-    x11.value = 15;
-    x12.value = 2;
-    x13.value = 1;
-    break;
+        case "10":
+            x9.value = 30;
+            x10.value = 52;
+            x11.value = 15;
+            x12.value = 2;
+            x13.value = 1;
+            break;
 
-case "11":
-    x9.value = 23;
-    x10.value = 57;
-    x11.value = 17;
-    x12.value = 3;
-    x13.value = 1;
-    break;
+        case "11":
+            x9.value = 23;
+            x10.value = 57;
+            x11.value = 17;
+            x12.value = 3;
+            x13.value = 1;
+            break;
 
-case "12":
-    x9.value = 21;
-    x10.value = 55;
-    x11.value = 19;
-    x12.value = 3;
-    x13.value = 1;
-    break;
+        case "12":
+            x9.value = 21;
+            x10.value = 55;
+            x11.value = 19;
+            x12.value = 3;
+            x13.value = 1;
+            break;
 
-case "13":
-    x9.value = 20;
-    x10.value = 51;
-    x11.value = 23;
-    x12.value = 5;
-    x13.value = 2;
-    break;
+        case "13":
+            x9.value = 20;
+            x10.value = 51;
+            x11.value = 23;
+            x12.value = 5;
+            x13.value = 2;
+            break;
 
-case "14":
-    x9.value = 19;
-    x10.value = 48;
-    x11.value = 26;
-    x12.value = 6;
-    x13.value = "";
-    break;
+        case "14":
+            x9.value = 19;
+            x10.value = 48;
+            x11.value = 26;
+            x12.value = 6;
+            x13.value = "";
+            break;
 
-case "15":
-    x9.value = 18;
-    x10.value = 46;
-    x11.value = "";
-    x12.value = "";
-    x13.value = "";
-    break;
-}
+        case "15":
+            x9.value = 18;
+            x10.value = 46;
+            x11.value = "";
+            x12.value = "";
+            x13.value = "";
+            break;
+    }
 });

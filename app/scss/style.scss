@@ -1,0 +1,236 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "globals";
+
+.header {
+    background-image: url(../img/main-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header__inner  {
+    padding: 48px 0 24px 0;
+    color: #DBB432;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    margin: 0 0 16px 0;
+    text-shadow: #000 3px 3px 4px;
+}
+
+.header__subtitle {
+    max-width: 350px;
+    margin: 0 auto;
+    background: rgba(#333, .3);
+    border-radius: 2px;
+    padding: 10px 5px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: #000 1px 1px 2px;
+}
+
+.menu {
+    padding: 20px 0;
+}
+
+.menu__item {
+    margin-bottom: 20px;
+}
+
+.menu__item:last-child {
+    margin-bottom: 0;
+}
+
+.menu__inner {
+    background-color: #333;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 6px;
+    
+}
+
+.menu__title {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.bg-filter {
+    background: rgba(#000, .3);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu__inner--bg1 {
+    background-image: url(../img/calc-bg.jpg);
+}
+
+.menu__inner--bg2 {
+    background-image: url(../img/datebook-bg.jpg);
+}
+
+.menu__inner--bg3 {
+    background-image: url(../img/crswim-bg.jpg);
+}
+
+.menu__inner--bg4 {
+    background-image: url(../img/discharges-bg.jpg);
+}
+
+.top-header {
+    background: #fff;
+    box-shadow: 3px 2px 5px rgba(#000, .3);
+    padding: 8px 0;
+}
+
+.top-header__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-header__logo {
+    color: #DBB432;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(#000, .6);
+}
+
+.top-header__reload {
+    padding: 5px 5px 0 5px;
+}
+
+.main-list__control {
+    text-align: center;
+}
+
+// добавить 
+
+.main-form__content {
+   input {
+       margin: 10px 0 20px 0;
+       border-radius: 6px;
+   }
+}
+
+.main-form__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+#main-form {
+    background-color: #ffffff;
+    margin: 24px 0;
+    padding: 24px 10px;
+    width: 70%;
+    min-width: 300px;
+  }
+  
+  /* Style the input fields */
+  input {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Roboto';
+    border: 1px solid #aaaaaa;
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  /* Mark the active step: */
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #4CAF50;
+  }
+
+#dataInfo {
+    padding: 24px 0 24px 0;
+    ul {
+        border-radius: 5px;
+        box-shadow: 5px 5px 15px rgba(#000, .2);
+        margin: 12px 0;
+        padding: 24px 5px 24px 5px;
+        display: block;
+        background: #fff;
+    }
+    li {
+        padding: 0 5px 12px 12px;
+    }
+    li:not(:last-child) {
+        margin-bottom: 24px;
+        border-bottom: 1px solid rgba(#000, .2);
+    }
+}
+// result 
+
+.result {
+    background: #fff;
+    padding: 24px 0;
+    margin: 24px 0;
+    p {
+        text-align: center;
+    }
+    span {
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 24px;
+        border-bottom: 1px solid rgba(#000, .2);
+    }
+}
+
+.main-form__submit {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+@import "media";

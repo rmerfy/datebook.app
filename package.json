@@ -1,0 +1,46 @@
+{
+  "name": "datebook",
+  "displayName": "Планировщик",
+  "version": "1.0.0",
+  "description": "создавай, совершенствуй и редактируй свой план тренировок",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Ilya-Ilyich",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "^9.0.0",
+    "cordova-browser": "^6.0.0",
+    "cordova-plugin-whitelist": "^1.3.4",
+    "cordova-sqlite-storage": "^5.1.0",
+    "animate.css": "^4.1.1",
+    "browser-sync": "^2.26.5",
+    "del": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "jquery": "^3.5.1",
+    "normalize.css": "^8.0.1",
+    "owl.carousel": "^2.3.4"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-sqlite-storage": {}
+    },
+    "platforms": [
+      "android",
+      "browser"
+    ]
+  },
+  "browserslist": [
+    "last 8 version"
+  ]
+}

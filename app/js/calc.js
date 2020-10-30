@@ -396,3 +396,217 @@ $(document).ready(function(){
         $("name-data").html(name);
     
 });
+
+
+//
+
+//Х14 = Х4*Х8
+var res14 = x4 * x8;
+// Х15 = Х14*Х2
+var res15 = res14 * x2;
+//Х16 = Х15*Х9/100
+var res16 = (res15 * x9) / 100;
+//Х17 = Х15*Х10/100
+var res17 = (res15 * x10) / 100;
+//Х18 = Х15*Х11/100
+var res18 = (res15 * x11) / 100;
+//Х19 = Х15*Х12/100
+var res19 = (res15 * x12) / 100;
+//Х20 = Х15*Х13/100
+var res20 = (res15 * x13) / 100;
+//X21 = X16/X14
+var res21 = res16 / res14;
+//X22 = X17/X14
+var res22 = res17 / res14;
+//X23 = X18/X14
+var res23 = res18 / res14;
+//X24 = X19/X14
+var res24 = res19 / res14;
+//X25 = X20/X14
+var res25 = res20 / res14;
+//Х26 = Х5* Х8*Х21
+var res26 = x5 * x8 * res21;
+//Х27 = Х5* Х8*Х22
+var res27 = x5 * x8 * res22;
+//Х28 = Х5* Х8*Х23
+var res28 = x5 * x8 * res23;
+//Х29 = Х5* Х8*Х24
+var res29 = x5 * x8 * res24;
+//Х30 = Х5* Х8*Х25
+var res30 = x5 * x8 * res25;
+//Х31 = Х6* Х8*Х21
+var res31 = x6 * x8 * res21;
+//Х32 = Х6* Х8*Х22
+var res32 = x6 * x8 * res22;
+//Х33 = Х6* Х8*Х23
+var res33 = x6 * x8 * res23;
+//Х34 = Х6* Х8*Х24
+var res34 = x6 * x8 * res24;
+//Х35 = Х6* Х8*Х25
+var res35 = x6 * x8 * res25;
+//Х36 = Х7* Х8*Х21
+var res36 = x7 * x8 * res21;
+//Х37 = Х7* Х8*Х22
+var res37 = x7 * x8 * res22;
+//Х38 = Х7* Х8*Х23
+var res38 = x7 * x8 * res23;
+//Х39 = Х7* Х8*Х24
+var res39 = x7 * x8 * res24;
+//Х40 = Х7* Х8*Х25
+var res40 = x7 * x8 * res25;
+//x41
+var res41 = 0;
+
+if (res27 < res32 && res27 < res37) {
+    res41 = res27;
+}
+
+else if (res32 < res27 && res32 < res37) {
+    res41 = res32;
+}
+
+else if (res37 < res32 && res37 < res27) {
+    res41 = res37;
+}
+
+//Х42 = Х41*3
+var res42 = res41 * 3;
+//Х43 = Х42/10
+var res43 = res42 / 10;
+//Х44 = Х43*5
+var res44 = res43 * 5;
+//Х45 = Х43*3
+var res45 = res43 * 3;
+//Х46 = Х43*2
+var res46 = res43 * 2;
+//Х47 = Х27-Х41+Х44
+var res47 = res27 - res41 + res44;
+//Х48 = Х32-Х41+Х45
+var res48 = res32 - res41 + res45;
+//Х49 = Х37-Х41+Х46
+var res49 = res37 - res41 + res46;
+//Х50 = Х47/(Х5*Х8)
+var res50 = res47 / (x5 * x8);
+//Х51 = Х48/(Х6*Х8)
+var res51 = res48 / (x6 * x8);
+//Х52 = Х49/(Х7*Х8)
+var res52 = res49 / (x7 * x8);
+
+//Х53 = (Х50+Х51+Х52)/10*5
+var res53 = (res50 + res51 + res52) / 10 * 5;
+//Х54 = (Х50+Х51+Х52)/10*3
+var res54 = (res50 + res51 + res52) / 10 * 3;
+//Х55 = (Х50+Х51+Х52)/10*2
+var res55 = (res50 + res51 + res52) / 10 * 2;
+//Х56 = Х53*Х5*Х8
+var res56 = res53 * x5 * x8;
+//Х57 = Х54*Х6*Х8
+var res57 = res54 * x6 * x8;
+//Х58 = Х55*Х7*Х8
+var res58 = res55 * x7 * x8;
+
+var res59 = 0;
+//если Х28 < X33 и Х28 < Х38 то Х59 = Х28
+if (res28 < res33 && res28 < res38) {
+    res59 = res28;
+}
+//если Х33 < X28 и Х33 < Х38 то Х59 = Х33
+else if (res33 < res28 && res33 < res38) {
+    res59 = res33;
+}
+//если Х38 < X33 и Х38 < Х28 то Х59 = Х38
+else if (res38 < res33 && res38 < res28) {
+    res59 = res38;
+}
+
+
+//X60 = X59*3
+var res60 = res59 * 3;
+//X61 = X60/10
+var res61 = res60 / 10;
+//X62 = X61*2
+var res62 = res61 * 2;
+//X63 = X61*3
+var res63 = res61 * 3;
+//X64 = X61*5
+var res64 = res61 * 5;
+//X65 = X28-X59+X62
+var res65 = res28 - res59 + res62;
+//X66 = X33-X59+X63
+var res66 = res33 - res59 + res63;
+//X67 = X38-X59+X64
+var res67 = res38 - res59 + res64;
+//X68 = X65/(X5*X8)
+var res68 = res65 / (x5 * x8);
+//X69 = X66/(X6*X8)
+var res69 = res66 / (x6 * x8);
+//X70 = X67/(X7*X8)
+var res70 = res67 / (x7 * x8);
+//X71 = (X68+X69+X70)/10*2
+var res71 = (res68 + res69 + res70) / 10 * 2;
+//X72 = (X68+X69+X70)/10*3
+var res72 = (res68 + res69 + res70) / 10 * 3;
+//X73 = (X68+X69+X70)/10*5
+var res73 = (res68 + res69 + res70) / 10 * 5;
+//X74 = X71*X5*X8
+var res74 = res71 * x5 * x8;
+//X75 = X72*X6*X8
+var res75 = res72 * x6 * x8;
+//X76 = X73*X7*X8
+var res76 = res73 * x7 * x8;
+
+//x77
+var res77 = 0;
+//если Х29 < X34 и Х29 < Х39 то Х77 = Х29
+if (res29 < res34 && res29 < res39) {
+    res77 = res29;
+}
+//если Х34 < X29 и Х33 < Х39 то Х77 = Х34 Исправлено
+else if (res34 < res29 && res34 < res39) {
+    res77 = res34;
+}
+//если Х39 < X34 и Х39 < Х29 то Х77 = Х39
+else if (res39 < res34 && res39 < res29) {
+    res77 = res39;
+}
+
+
+//X78 = X77*3
+var res78 = res77 * 3;
+//X79 = X78/10
+var res79 = res78 / 10;
+//X80 = X79*5
+var res80 = res79 * 1;
+//X81 = X79*3
+var res81 = res79 * 3;
+//X82 = X79*2
+var res82 = res79 * 6;
+//X83 = X29-X77+X80
+var res83 = res29 - res77 + res80;
+//X84 = X34-X77+X81
+var res84 = res34 - res77 + res81;
+//X85 = X39-X77+X82
+var res85 = res39 - res77 + res82;
+//X86 = X83/(X5*X8)
+var res86 = res83 / (x5 * x8);
+//X87 = X84/(X6*X8)
+var res87 = res84 / (x6 * x8);
+//X88 = X85/(X7*X8)
+var res88 = res85 / (x7 * x8);
+//X89 = (X86+X87+X88)/10*1
+var res89 = (res86 + res87 + res88) / 10 * 1;
+//X90 = (X86+X87+X88)/10*3
+var res90 = (res86 + res87 + res88) / 10 * 3;
+//X91 = (X86+X87+X88)/10*6
+var res91 = (res86 + res87 + res88) / 10 * 6;
+//X92 = X89*X5*X8
+var res92 = res89 * x5 * x8;
+//X93 = X90*X6*X8
+var res93 = res90 * x6 * x8;
+//X94 = X91*X7*X8
+var res94 = res91 * x7 * x8;
+
+
+//?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?
+//, res14 REAL, res15 REAL, res16 REAL, res17 REAL, res18 REAL, res19 REAL, res20 REAL, res21 REAL, res22 REAL, res23 REAL, res24 REAL, res25 REAL, res26 REAL, res27 REAL, res28 REAL, res29 REAL, res30 REAL, res31 REAL, res32 REAL, res33 REAL, res34 REAL, res35 REAL, res36 REAL, res37 REAL, res38 REAL, res39 REAL, res40 REAL, res41 REAL, res42 REAL, res43 REAL, res44 REAL, res45 REAL, res46 REAL, res47 REAL, res48 REAL, res49 REAL, res50 REAL, res51 REAL, res52 REAL, res53 REAL, res54 REAL, res55 REAL, res56 REAL, res57 REAL, res58 REAL, res59 REAL, res60 REAL, res61 REAL, res62 REAL, res63 REAL, res64 REAL, res65 REAL, res66 REAL, res67 REAL, res68 REAL, res69 REAL, res70 REAL, res71 REAL, res72 REAL, res73 REAL, res74 REAL, res75 REAL, res76 REAL, res77 REAL, res78 REAL, res79 REAL, res80 REAL, res81 REAL, res82 REAL, res83 REAL, res84 REAL, res85 REAL, res86 REAL, res87 REAL, res88 REAL, res89 REAL, res90 REAL, res91 REAL, res92 REAL, res93 REAL, res94 REAL
+//, res14, res15, res16, res17, res18, res19, res20, res21, res22, res23, res24, res25, res26, res27, res28, res29, res30, res31, res32, res33, res34, res35, res36, res37, res38, res39, res40, res41, res42, res43, res44, res45, res46, res47, res48, res49, res50, res51, res52, res53, res54, res55, res56, res57, res58, res59, res60, res61, res62, res63, res64, res65, res66, res67, res68, res69, res70, res71, res72, res73, res74, res75, res76, res77, res78, res79, res80, res81, res82, res83, res84, res85, res86, res87, res88, res89, res90, res91, res92, res93, res94
